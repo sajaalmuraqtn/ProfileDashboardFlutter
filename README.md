@@ -22,10 +22,17 @@ Icon → Shows different action icons like call, share, and message.
 
 TextButton → A styled button for "Contact Us" functionality.
 
-SingleChildScrollView → Allows scrolling if the content exceeds the screen size.
+SingleChildScrollView → Allows the entire screen to be scrollable when content is larger than the available space.
+
+Stack → Places widgets on top of each other, useful for overlays such as profile images above background containers.
+
+ListTile → A pre-styled row layout that includes a leading widget (e.g., icon or avatar), a title, and an optional subtitle and trailing widget.
 
 BoxDecoration & BoxShadow → Used for styling profile image and containers with shadows and rounded corners.
 
 ## Design layout
 ![ProfileDashboard Design layout](assets/ScreenDesignLayout.png)
+## Final Result
+![ProfileDashboard Design layout](assets/screenshot1.png)
+![ProfileDashboard Design layout](assets/screenshot2.png)
 
