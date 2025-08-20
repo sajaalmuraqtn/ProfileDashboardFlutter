@@ -1,4 +1,4 @@
-# ProfileDashboardFlutter - Flutter
+# ProfileDashboard - Flutter
 
 This is a simple **ProfileDashboardFlutter** 
 
