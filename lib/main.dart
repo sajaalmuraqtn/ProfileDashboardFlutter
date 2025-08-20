@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           title: Text("Profile", style: TextStyle(fontWeight: FontWeight.bold)),
           actionsPadding: EdgeInsets.only(
             right: 20,
-          ), //make padding between action and screen border
+          ), 
           actions: [
             Image(image: AssetImage('icons/Menu.png'), height: 20, width: 20),
           ],
