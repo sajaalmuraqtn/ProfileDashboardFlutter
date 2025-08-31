@@ -1,6 +1,6 @@
 {
-    "name": "session10_app",
-    "short_name": "session10_app",
+    "name": "profiledashboard_task",
+    "short_name": "profiledashboard_task",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

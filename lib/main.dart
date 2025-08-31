@@ -1,8 +1,13 @@
+import 'package:profiledashboard_task/screens/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(    MaterialApp(
+      theme: ThemeData(textTheme: GoogleFonts.poppinsTextTheme()),
+      debugShowCheckedModeBanner: false,
+      home: SplashScreen() 
+      ));
 }
 
 class MyApp extends StatelessWidget {

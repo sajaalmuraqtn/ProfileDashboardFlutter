@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="session10_app"
+        android:label="profiledashboard_task"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
