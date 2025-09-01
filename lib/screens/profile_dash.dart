@@ -3,19 +3,26 @@ import 'package:profiledashboard_task/widgets/feedback_widget.dart';
 import 'package:profiledashboard_task/widgets/house_widget.dart';
 import 'package:profiledashboard_task/widgets/section_widget.dart';
 import 'package:profiledashboard_task/widgets/service_widget.dart';
-import 'package:flutter/material.dart'; 
+import 'package:flutter/material.dart';
 
 class ProfileDash extends StatelessWidget {
-  String emailUser;
-  ProfileDash(this.emailUser, {super.key});
+  List<String> servicesName = [
+    'electrical',
+    'educational',
+    'plumbing',
+    'painting',
+  ];
+  ProfileDash({super.key});
 
   @override
   Widget build(BuildContext context) {
+
+    String email =ModalRoute.of(context)?.settings.arguments as String;
+
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-    // هنا أنشأنا زر عائم (FloatingActionButton) يظهر فوق الواجهة
-    // عادةً بيكون أسفل يمين الشاشة في تطبيقات الموبايل
-
+        // هنا أنشأنا زر عائم (FloatingActionButton) يظهر فوق الواجهة
+        // عادةً بيكون أسفل يمين الشاشة في تطبيقات الموبايل
         onPressed: () {
           Navigator.of(context).canPop();
           // هذا الكود بينفذ لما المستخدم يضغط على الزر
@@ -55,7 +62,7 @@ class ProfileDash extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Hello $emailUser'),
+              Text('Hello $email'),
               Row(
                 spacing: 20,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -224,8 +231,8 @@ class ProfileDash extends StatelessWidget {
                         ),
                       ),
                     ),
-                    HouseWidget( house_name: 'Tobi Lateef', ),
-                    HouseWidget( house_name: 'Queen Needle', ),
+                    HouseWidget(house_name: 'Tobi Lateef'),
+                    HouseWidget(house_name: 'Queen Needle'),
                     HouseWidget(house_name: 'Joan Blessing'),
                   ],
                 ),

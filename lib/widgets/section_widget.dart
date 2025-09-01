@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 
 class SectionWidget extends StatelessWidget {
   String title;
-  SectionWidget({super.key, required this.title});
+  void Function()? on_Tap;
+  SectionWidget({super.key, required this.title,this.on_Tap});
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -16,12 +17,7 @@ class SectionWidget extends StatelessWidget {
           style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
         ),
         GestureDetector(
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => ServicesScreen()),
-            );
-          },
+          onTap: on_Tap,
 
           child: Text(
             'ALL',

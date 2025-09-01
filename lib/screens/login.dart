@@ -1,4 +1,5 @@
 import 'package:profiledashboard_task/helpers/constants.dart';
+import 'package:profiledashboard_task/helpers/routes.dart';
 import 'package:profiledashboard_task/screens/profile_dash.dart';
 import 'package:profiledashboard_task/screens/sign_up.dart';
 import 'package:profiledashboard_task/widgets/custom_text_feild.dart';
@@ -85,13 +86,9 @@ class LoginScreen extends StatelessWidget {
                   Text('Dont have an account'),
                   TextButton(
                     onPressed: () {
-                      Navigator.pushReplacement(
+                      Navigator.pushReplacementNamed(
                         context,
-                        MaterialPageRoute(
-                          builder: (context) {
-                            return SignUp();
-                          },
-                        ),
+                        AppRoutes.signup  
                       );
                     },
                     child: Text(' Sign up'),
@@ -113,16 +110,12 @@ class LoginScreen extends StatelessWidget {
       _formKey.currentState!.reset(); 
       //  جملة بستخدمها لحتى افرغ الحقول من القيم اللي فيها] 
 
-      Navigator.pushReplacement(
+      Navigator.pushReplacementNamed(
         /* pushReplacement -> 
         استخدمتو لحتى بس اكبس على زر الرجوع ما يرجعني على صفحة تسجيل الدخول  */
         
-        context,
-        MaterialPageRoute(
-          builder: (context) {
-            return ProfileDash(emailUser!);
-          },
-        ),
+        context,AppRoutes.dash,arguments: emailUser
+         
       );
     }
     //@

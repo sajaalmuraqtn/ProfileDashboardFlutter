@@ -1,4 +1,5 @@
 import 'package:profiledashboard_task/helpers/constants.dart';
+import 'package:profiledashboard_task/helpers/routes.dart';
 import 'package:profiledashboard_task/screens/login.dart';
 import 'package:profiledashboard_task/screens/profile_dash.dart';
 import 'package:profiledashboard_task/widgets/custom_text_feild.dart';
@@ -159,13 +160,9 @@ class SignUp extends StatelessWidget {
                     Text('has an Account'),
                     TextButton(
                       onPressed: () {
-                        Navigator.pushReplacement(
+                        Navigator.pushReplacementNamed(
                           context,
-                          MaterialPageRoute(
-                            builder: (context) {
-                              return LoginScreen();
-                            },
-                          ),
+                          AppRoutes.login
                         );
                       },
                       child: Text(' Login'),
@@ -183,14 +180,10 @@ class SignUp extends StatelessWidget {
   _signUp(BuildContext context) {
     if (_formKey.currentState!.validate()) {
       _formKey.currentState!.reset();
-      Navigator.push(
+      Navigator.pushReplacementNamed(
         context,
-        MaterialPageRoute(
-          builder: (context) {
-            return ProfileDash(emailUser!);
-          },
-        ),
-      );
+        AppRoutes.dash,arguments: emailUser
+       );
     }
   }
 }
