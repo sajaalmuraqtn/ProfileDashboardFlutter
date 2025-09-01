@@ -1,4 +1,5 @@
 import 'package:profiledashboard_task/helpers/constants.dart';
+import 'package:profiledashboard_task/helpers/routes.dart';
 import 'package:profiledashboard_task/widgets/feedback_widget.dart';
 import 'package:profiledashboard_task/widgets/house_widget.dart';
 import 'package:profiledashboard_task/widgets/section_widget.dart';
@@ -239,7 +240,7 @@ class ProfileDash extends StatelessWidget {
               ),
               SizedBox(height: AppConstants.height),
 
-              SectionWidget(title: 'Services'),
+              SectionWidget(title: 'Services',on_Tap: () => Navigator.pushNamed(context, AppRoutes.services,arguments: servicesName),),
 
               SizedBox(height: AppConstants.height),
 
