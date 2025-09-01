@@ -58,7 +58,7 @@ class ServicesScreen extends StatelessWidget {
         title: servicesName[index],
         // العنوان = اسم الخدمة (نجيبه من القائمة servicesName حسب index)
 
-        description: 'lorem',
+        description: 'Description',
         // وصف ثابت تجريبي (placeholder) للخدمة
       ),
     );
