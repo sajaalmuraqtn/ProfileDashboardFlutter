@@ -13,12 +13,21 @@ class ProfileDash extends StatelessWidget {
     'plumbing',
     'painting',
   ];
+
+  Map<String, String> housesMap = {
+    'Tobi Lateef': 'avatar.png',
+    'Queen Needle': 'avatar.png',
+    'Joan Blessing': 'avatar.png',
+    'tarik Lateef': 'avatar.png',
+    'ilker ilgaz': 'avatar.png',
+    'akin ray': 'avatar.png',
+  };
+
   ProfileDash({super.key});
 
   @override
   Widget build(BuildContext context) {
-
-    String email =ModalRoute.of(context)?.settings.arguments as String;
+    String email = ModalRoute.of(context)?.settings.arguments as String;
 
     return Scaffold(
       floatingActionButton: FloatingActionButton(
@@ -190,7 +199,14 @@ class ProfileDash extends StatelessWidget {
                   ),
                 ],
               ),
-              SectionWidget(title: 'Houses'),
+              SectionWidget(
+                title: 'Houses',
+                on_Tap: () => Navigator.pushNamed(
+                  context,
+                  AppRoutes.houses,
+                  arguments: housesMap,
+                ),
+              ),
 
               SizedBox(height: AppConstants.height),
               SingleChildScrollView(
@@ -240,7 +256,14 @@ class ProfileDash extends StatelessWidget {
               ),
               SizedBox(height: AppConstants.height),
 
-              SectionWidget(title: 'Services',on_Tap: () => Navigator.pushNamed(context, AppRoutes.services,arguments: servicesName),),
+              SectionWidget(
+                title: 'Services',
+                on_Tap: () => Navigator.pushNamed(
+                  context,
+                  AppRoutes.services,
+                  arguments: servicesName,
+                ),
+              ),
 
               SizedBox(height: AppConstants.height),
 
