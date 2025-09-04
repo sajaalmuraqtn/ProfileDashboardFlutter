@@ -33,6 +33,11 @@ BoxDecoration & BoxShadow → Used for styling profile image and containers with
 ## Design layout
 ![ProfileDashboard Design layout](assets/ScreenDesignLayout.png)
 ## Final Result
-![ProfileDashboard Design layout](assets/screenshot1.png)
-![ProfileDashboard Design layout](assets/screenshot2.png)
+![ProfileDashboard Design layout](assets/splashscreen.png)
+![ProfileDashboard Design layout](assets/loginscreen.png)
+![ProfileDashboard Design layout](assets/signupscreen.png)
+![ProfileDashboard Design layout](assets/homescreen.png)
+![ProfileDashboard Design layout](assets/homescreen2.png)
+![ProfileDashboard Design layout](assets/servicesscreen.png)
+![ProfileDashboard Design layout](assets/housesscreen.png)
 
