@@ -8,19 +8,19 @@ import 'package:flutter/material.dart';
 
 class ProfileDash extends StatelessWidget {
   List<String> servicesName = [
-    'electrical',
-    'educational',
-    'plumbing',
-    'painting',
+    'Electrical',
+    'Educational',
+    'Plumbing',
+    'Painting',
   ];
 
   Map<String, String> housesMap = {
     'Tobi Lateef': 'avatar.png',
     'Queen Needle': 'avatar.png',
     'Joan Blessing': 'avatar.png',
-    'tarik Lateef': 'avatar.png',
-    'ilker ilgaz': 'avatar.png',
-    'akin ray': 'avatar.png',
+    'Tarik Lateef': 'avatar.png',
+    'Ilker Ilgaz': 'avatar.png',
+    'Akin Ray': 'avatar.png',
   };
 
   ProfileDash({super.key});
@@ -30,6 +30,8 @@ class ProfileDash extends StatelessWidget {
     String email = ModalRoute.of(context)?.settings.arguments as String;
 
     return Scaffold(
+      backgroundColor: Colors.white,
+
       floatingActionButton: FloatingActionButton(
         // هنا أنشأنا زر عائم (FloatingActionButton) يظهر فوق الواجهة
         // عادةً بيكون أسفل يمين الشاشة في تطبيقات الموبايل

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profiledashboard_task/helpers/constants.dart';
 
 class CustomTextFeild extends StatelessWidget {
   final String hint;
@@ -33,13 +34,13 @@ class CustomTextFeild extends StatelessWidget {
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
-          borderSide: BorderSide(color: Colors.lightBlue),
+          borderSide: BorderSide(color: AppConstants.primaryColor),
           // AppConstants.primaryColorvzx
         ),
         filled: true,
 
-        fillColor: Color.fromARGB(175, 238, 235, 235),
-        suffixIconColor: Colors.grey,
+        fillColor: Colors.white,
+        suffixIconColor: Colors.black,
         suffixIcon: Icon(icon),
       ),
     );

@@ -48,12 +48,12 @@ class HouseWidget extends StatelessWidget {
           ),
 
           Text(
-            house_name,
+            house_name ,
             textAlign: TextAlign.center,
             style: TextStyle(
               overflow: TextOverflow.ellipsis,
-              fontSize: 10,
-              fontWeight: FontWeight.w500,
+               fontSize: 10,
+               fontWeight: FontWeight.w500,
             ),
           ),
         ],

@@ -11,7 +11,11 @@ class ServicesScreen extends StatelessWidget {
     List<String> servicesName =
         ModalRoute.of(context)?.settings.arguments as List<String>;
     return Scaffold(
+      backgroundColor: Colors.white,
+
       appBar: AppBar(
+                backgroundColor: Colors.transparent,
+
         title: Text("Services"),
         actions: [
           InkWell(
@@ -27,43 +31,40 @@ class ServicesScreen extends StatelessWidget {
           SizedBox(width: 20),
         ],
       ),
-      body: 
-      ListView.separated(
-  // نستخدم ListView.separated لعرض قائمة بعناصر وبين كل عنصر والثاني فاصل (separator)
+      body: ListView.separated(
+        // نستخدم ListView.separated لعرض قائمة بعناصر وبين كل عنصر والثاني فاصل (separator)
+        separatorBuilder: (context, index) {
+          return Divider();
+          // يرسم خط فاصل (Divider) بين كل عنصرين في القائمة
+        },
 
-  separatorBuilder: (context, index) {
-    return Divider(); 
-    // يرسم خط فاصل (Divider) بين كل عنصرين في القائمة
-  },
+        shrinkWrap: true,
 
-  shrinkWrap: true,
-  // بيخلي الـ ListView تاخذ فقط المساحة اللي تحتاجها (ما تتمدد لكل الشاشة)
-  // مفيد إذا كانت القائمة داخل ScrollView أو Column
+        // بيخلي الـ ListView تاخذ فقط المساحة اللي تحتاجها (ما تتمدد لكل الشاشة)
+        // مفيد إذا كانت القائمة داخل ScrollView أو Column
+        itemCount: servicesName.length,
 
-  itemCount: servicesName.length,
-  // عدد العناصر المعروضة في القائمة = طول القائمة servicesName
+        // عدد العناصر المعروضة في القائمة = طول القائمة servicesName
+        itemBuilder: (context, index) {
+          // دالة تبني العنصر عند كل index من القائمة
+          return Padding(
+            padding: const EdgeInsets.all(10.0),
 
-  itemBuilder: (context, index) {
-    // دالة تبني العنصر عند كل index من القائمة
-    return Padding(
-      padding: const EdgeInsets.all(10.0),
-      // إضافة مسافة (Padding) حوالين كل عنصر من العناصر
+            // إضافة مسافة (Padding) حوالين كل عنصر من العناصر
+            child: ServiceWidget(
+              // Widget مخصص (عملناه نحن) لعرض تفاصيل الخدمة
+              icon: 'electrical.png',
 
-      child: ServiceWidget(
-        // Widget مخصص (عملناه نحن) لعرض تفاصيل الخدمة
+              // اسم صورة الأيقونة المعروضة لكل عنصر
+              title: servicesName[index],
 
-        icon: 'electrical.png',
-        // اسم صورة الأيقونة المعروضة لكل عنصر
-
-        title: servicesName[index],
-        // العنوان = اسم الخدمة (نجيبه من القائمة servicesName حسب index)
-
-        description: 'Description',
-        // وصف ثابت تجريبي (placeholder) للخدمة
+              // العنوان = اسم الخدمة (نجيبه من القائمة servicesName حسب index)
+              description: 'Description',
+              // وصف ثابت تجريبي (placeholder) للخدمة
+            ),
+          );
+        },
       ),
-    );
-  },
-),
     );
   }
 }

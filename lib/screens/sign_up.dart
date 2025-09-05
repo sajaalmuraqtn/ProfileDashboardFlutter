@@ -4,7 +4,7 @@ import 'package:profiledashboard_task/screens/login.dart';
 import 'package:profiledashboard_task/screens/profile_dash.dart';
 import 'package:profiledashboard_task/widgets/custom_text_feild.dart';
 import 'package:flutter/material.dart';
-import 'package:profiledashboard_task/widgets/custom_text_feild.dart'; 
+import 'package:profiledashboard_task/widgets/custom_text_feild.dart';
 
 class SignUp extends StatelessWidget {
   SignUp({super.key});
@@ -23,6 +23,7 @@ class SignUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(30),
@@ -32,6 +33,8 @@ class SignUp extends StatelessWidget {
               spacing: 20,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
+                SizedBox(height: 30),
+
                 Text(
                   'Welcom in Our App (Sign UP)',
                   style: AppConstants.primary_numbers_text_style,
@@ -95,8 +98,8 @@ class SignUp extends StatelessWidget {
                   isPassword: true,
                   custom_validator: (password) {
                     current_pass = password;
-                    //current_pass هون خزّنا قيمة الباسورد المدخلة في المتغير 
-                    //confirm password عشان نقدر نستخدمها بعدين في حقل   
+                    //current_pass هون خزّنا قيمة الباسورد المدخلة في المتغير
+                    //confirm password عشان نقدر نستخدمها بعدين في حقل
 
                     print('current password in password feild : $current_pass');
                     // لطباعة الباسورد الحالي (للتجربة فقط)
@@ -162,10 +165,13 @@ class SignUp extends StatelessWidget {
                       onPressed: () {
                         Navigator.pushReplacementNamed(
                           context,
-                          AppRoutes.login
+                          AppRoutes.login,
                         );
                       },
-                      child: Text(' Login'),
+                      child: Text(
+                        ' Login',
+                        style: TextStyle(color: AppConstants.primaryColor),
+                      ),
                     ),
                   ],
                 ),
@@ -182,8 +188,9 @@ class SignUp extends StatelessWidget {
       _formKey.currentState!.reset();
       Navigator.pushReplacementNamed(
         context,
-        AppRoutes.dash,arguments: emailUser
-       );
+        AppRoutes.dash,
+        arguments: emailUser,
+      );
     }
   }
 }
