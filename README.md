@@ -1,8 +1,7 @@
 # 📱 ProfileDashboard - Flutter  
 
 ProfileDashboard is a modern Flutter application built with **Material Design** principles.  
-It demonstrates clean UI, reusable widgets, and a smooth navigation flow across multiple screens.  
-The project is perfect for learning how to structure a Flutter app and can also serve as a foundation for real-world projects.  
+It demonstrates clean UI, reusable widgets, and a smooth navigation flow across multiple screens.
 
 ---
 
@@ -50,10 +49,4 @@ The project is perfect for learning how to structure a Flutter app and can also 
 ---
 
 ## 📷 Final Result  
-![Splash](assets/splashscreen.png)  
-![Login](assets/loginscreen.png)  
-![Signup](assets/signupscreen.png)  
-![Home](assets/homescreen.png)  
-![Home2](assets/homescreen2.png)  
-![Services](assets/servicesscreen.png)  
-![Houses](assets/housesscreen.png)  
+![ScreenView](assets/ScreenView.png)  
