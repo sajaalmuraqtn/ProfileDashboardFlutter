@@ -1,38 +1,59 @@
-# ProfileDashboard - Flutter
+# 📱 ProfileDashboard - Flutter  
 
-This is a simple **ProfileDashboardFlutter** 
+ProfileDashboard is a modern Flutter application built with **Material Design** principles.  
+It demonstrates clean UI, reusable widgets, and a smooth navigation flow across multiple screens.  
+The project is perfect for learning how to structure a Flutter app and can also serve as a foundation for real-world projects.  
 
-#📌 Widgets Used in the Project
+---
 
-MaterialApp → The root of the application that provides Material Design styling.
+## 🚀 Features  
+- Beautiful **Splash Screen** with branding.  
+- **Login & Signup** flows with clean and intuitive design.  
+- A centralized **Home Dashboard** with quick navigation.  
+- Dedicated **Services Screen** showcasing available services in a grid layout.  
+- **Houses Screen** with visual browsing experience.  
+- Responsive design and scrollable content.  
 
-Scaffold → The main layout structure that provides AppBar, Body, and other screen elements.
+---
 
-AppBar → A top bar that contains the profile title, avatar, and action icons.
+## 📌 Widgets Used  
+- **MaterialApp** → The root of the app with Material Design styling.  
+- **Scaffold** → Provides the base layout with AppBar, Body, and more.  
+- **AppBar** → Displays the top navigation bar with actions and title.  
+- **CircleAvatar** → Perfect for profile images and social icons.  
+- **Text** → Displays names, descriptions, and labels.  
+- **Row & Column** → Align elements horizontally and vertically.  
+- **Container** → Adds styling, background, and spacing.  
+- **Icon** → Interactive icons like call, share, and message.  
+- **TextButton** → For actions like "Contact Us".  
+- **SingleChildScrollView** → Makes content scrollable on smaller devices.  
+- **Stack** → Overlays widgets, e.g., profile image over background.  
+- **ListTile** → Pre-styled rows with icons, titles, and trailing actions.  
+- **BoxDecoration & BoxShadow** → Customizes visuals with rounded corners and shadows.  
 
-CircleAvatar → Used to display profile and social media icons in a circular shape.
+---
 
-Text → Displays different pieces of text such as the profile name and social links.
+## 🖼 Screens Preview  
 
-Row & Column → Layout widgets to arrange elements horizontally (Row) and vertically (Column).
+- **Splash Screen** → Welcomes the user with branding and smooth transition.  
+- **Login Screen** → Secure, clean, and user-friendly access for existing users.  
+- **Signup Screen** → A simple and intuitive way for new users to register.  
+- **Home Screen** → The main dashboard with navigation to all features.  
+- **Services Screen** → A grid-based layout showcasing available services.  
+- **Houses Screen** → A clean, card-style layout displaying houses with images and names.  
 
-Container → Used for styling sections with padding, margin, decoration, and background colors.
+---
 
-Icon → Shows different action icons like call, share, and message.
-
-TextButton → A styled button for "Contact Us" functionality.
-
-SingleChildScrollView → Allows the entire screen to be scrollable when content is larger than the available space.
-
-Stack → Places widgets on top of each other, useful for overlays such as profile images above background containers.
-
-ListTile → A pre-styled row layout that includes a leading widget (e.g., icon or avatar), a title, and an optional subtitle and trailing widget.
-
-BoxDecoration & BoxShadow → Used for styling profile image and containers with shadows and rounded corners.
-
-## Design layout
+## 🎨 Design Layout  
 ![ProfileDashboard Design layout](assets/ScreenDesignLayout.png)
-## Final Result
-![ProfileDashboard Design layout](assets/screenshot1.png)
-![ProfileDashboard Design layout](assets/screenshot2.png)
 
+---
+
+## 📷 Final Result  
+![Splash](assets/splashscreen.png)  
+![Login](assets/loginscreen.png)  
+![Signup](assets/signupscreen.png)  
+![Home](assets/homescreen.png)  
+![Home2](assets/homescreen2.png)  
+![Services](assets/servicesscreen.png)  
+![Houses](assets/housesscreen.png)  
